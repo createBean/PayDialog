@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/gray_press" android:state_pressed="true"/>
+    <!--需要展示2个或者2个以上获取焦点的View的界面-->
+    <item android:drawable="@color/white" android:state_activated="false"/>
+    <item android:drawable="@color/white"/>
+</selector>
