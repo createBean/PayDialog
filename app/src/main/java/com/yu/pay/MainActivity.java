@@ -12,9 +12,9 @@ public class MainActivity extends AppCompatActivity implements PayPasswordView.I
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        findViewById(R.id.btn_wechat).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btn_wechat).setOnClickListener(new NoDoubleClickListener() {
             @Override
-            public void onClick(View v) {
+            protected void onNoDoubleClick(View v) {
                 Bundle bundle = new Bundle();
                 bundle.putString(PayFragment.EXTRA_CONTENT, "" + 100.00);
                 mPayFragment = new PayFragment();
